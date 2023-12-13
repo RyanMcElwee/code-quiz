@@ -1,0 +1,47 @@
+/* Set-up of Page Style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d9dcd6;
+ 
+}
+
+/*header contains link to High Score and Timer*/
+
+header {
+    background-color: rgb(130, 139, 237);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: large;
+}
+
+/*High Score link style*/
+
+header div#hs {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header div#hs:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/*Timer style*/
+
+header #time {
+    font-weight: bolder;
+}
+
+
+p {
+    font-size: 16px;
+}
