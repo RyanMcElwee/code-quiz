@@ -15,7 +15,7 @@ body {
 /*header contains link to High Score and Timer*/
 
 header {
-    background-color: rgb(130, 139, 237);
+    background-color: rgb(130, 196, 150);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -41,7 +41,163 @@ header #time {
     font-weight: bolder;
 }
 
+/*Main Container style - displays start, question, end of quiz and high score divs*/
 
-p {
-    font-size: 16px;
+main .container {
+    width: 500px;
+    margin: auto;
+}
+
+main .container h1 {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*Start screen div style*/
+
+main .container .start-div {
+    display: block;
+}
+
+main .container .start-div p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+main div.start-btn {
+    display: flex;
+    justify-content: center;
+}
+
+main div.start-btn button {
+    background-color: rgb(76, 202, 76);
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid rgb(1, 68, 1);
+    border-radius: 5px;
+    transition: .03s;
+}
+
+main div.start-btn button:hover {
+    background-color: rgb(149, 216, 130);
+}
+
+/*Question screen div style*/
+
+main .container .question-div {
+    display: none;
+}
+
+main .container .question-div .buttons {
+    margin-bottom: 10px;
+}
+main .container .question-div .buttons button {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    background-color: rgb(76, 202, 76);
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid rgb(1, 68, 1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+main .container .question-div .buttons button:hover{
+    background-color: rgb(149, 216, 130);
+}
+
+/*Message - Right or Wrong*/
+main .container .question-div #right-wrong {
+    display: none;
+    transition: 0.3s;
+}
+
+main .container .question-div .right {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(119, 221, 93);
+    font-weight: bold;
+    font-style: italic;
+}
+
+main .container .question-div .wrong {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(236, 62, 53);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*End of Question screen div style*/
+main .container .end-div {
+    display: none;
+}
+main .container .end-div h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+main .container .end-div form {
+    text-align: center;
+}
+
+main .container .end-div form input {
+    font-size: 1.2rem;
+}
+
+main .container .end-div label {
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+main .container .end-div button {
+    background-color: rgb(76, 202, 76);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid rgb(1, 68, 1);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+main .container .end-div button:hover {
+    background-color: rgb(149, 216, 130);
+}
+
+/*High Scores screen div style*/
+main .container .high-scores {
+    display: none;
+}
+
+main .container .high-scores ol li {
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+main .container .high-scores ol li:nth-child(odd) {
+    background-color: rgb(149, 216, 130);
+}
+
+main .container .high-scores ol li:nth-child(even) {
+    background-color: rgb(76, 202, 76);
+}
+
+main .container .high-scores div#hs-btns {
+    margin-top: 20px;
+}
+
+main .container .high-scores div#hs-btns button {
+    background-color: rgb(76, 202, 76);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid rgb(1, 68, 1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .high-scores div#hs-btns button:hover {
+    background-color: rgb(149, 216, 130);
 }
